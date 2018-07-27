@@ -1,0 +1,10 @@
+html {
+color:black;
+background-color:white;
+background-image:url(../res/fond.jpg) ;
+}
+
+#para{
+	color: white;
+	font-size: 30px;
+}

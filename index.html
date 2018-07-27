@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wordz</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+                <ul>
+                  <li><a href="#">Font Size</a>
+                        <ul>
+                              <li><button onclick="size10()">10</button></li>
+                              <li><button onclick="size20()">20</button></li>
+                              <li><button onclick="size40()">40</button></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">Fonts</a>
+                        <ul>
+                              <li><button onclick="Arialfont()">Arial</button></li>
+                              <li><button onclick="Courier()">Helvetica</button></li>
+                              <li><button onclick="Lucida()">Gill Sans</button></li>
+                        </ul>
+                  </li>
+                  <li><a href="#">fazet</a>
+                    <ul>
+                  <li><button onclick="bold()">Bold</button></li>
+                  <li><button onclick="italic()">Italic</button></li>
+                  <li><button onclick="underline()">Underline</button></li>
+                    </ul>
+                </ul>
+	<p id="para">change this is a paragraph .</p>
+
+
+    <script>
+      function italic() {
+    document.getElementById("para").style.fontStyle = "italic";
+	}
+	  function bold() {
+    document.getElementById("para").style.fontWeight = "900";
+  	}
+  	  function underline() {
+    document.getElementById("para").style.textDecoration = "underline";
+	}
+		 	  function size10() {
+            var fon = document.getElementById("para");
+            fon.style.fontSize = "10px" ;
+            }
+            function size20() {
+            var fon = document.getElementById("para");
+            fon.style.fontSize = "20px" ;
+            }
+            function size40() {
+            var fon = document.getElementById("para");
+            fon.style.fontSize = "40px" ;
+            }
+            function Arialfont() {
+            var fon = document.getElementById("para");
+            fon.style.fontFamily = "Arial, Helvetica, sans-serif";
+            }
+            function Courier() {
+            var fon = document.getElementById("para");
+            fon.style.fontFamily = "Courier New, Courier, monospace";
+            }
+            function Lucida() {
+            var fon = document.getElementById("para");
+            fon.style.fontFamily = "Lucida Console, Monaco, monospace";
+            }
+    </script>
+</body>
+</html>
